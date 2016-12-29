@@ -32,7 +32,7 @@ describe('Service: RestService', () => {
 
     function setupConnections(backend: MockBackend, options: any){
         backend.connections.subscribe((connection: MockConnection) => {
-            if(connection.request.url == 'api/forms'){
+            if(connection.request.url == '/api/forms'){
                 const responseOptions = new ResponseOptions(options);
                 const response = new Response(responseOptions);
 

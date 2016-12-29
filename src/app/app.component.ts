@@ -17,7 +17,6 @@ export class AppComponent {
         restService.getForms().subscribe((forms: FormData[]) => {
             this.formService.setForms(forms);
             this.forms = this.formService.getAllForms();
-            console.log(this.forms);
         });
     }
 
