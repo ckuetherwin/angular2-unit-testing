@@ -1,7 +1,7 @@
 import {Component, Input, OnChanges} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 
-import {Question} from '../../models/question.model';
+import {Question} from '../../models';
 
 @Component({
     selector: 'dynamic-form',

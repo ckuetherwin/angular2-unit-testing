@@ -98,13 +98,13 @@
                 <div class="row">
                     <div class="col-sm-2">
                         <div class="countBox info">
-                            <h2>5</h2>
+                            <h2>11</h2>
                             Total Tests
                         </div>
                     </div>
                     <div class="col-sm-2 col-sm-offset-1">
                         <div class="countBox success">
-                            <h2>5</h2>
+                            <h2>11</h2>
                             Passed Tests
                         </div>
                     </div>
@@ -157,6 +157,36 @@
     <td class="expand"/>
     <td class="status">Passed</td>
     <td>Component: DynamicQuestionComponent :: should return true if the form control is valid</td>
+  </tr>
+  <tr class="success">
+    <td class="expand"/>
+    <td class="status">Passed</td>
+    <td>Service: FormService :: #getAllForms should, by default, return any empty array</td>
+  </tr>
+  <tr class="success">
+    <td class="expand"/>
+    <td class="status">Passed</td>
+    <td>Service: FormService :: #setForms should set the `forms` attribute</td>
+  </tr>
+  <tr class="success">
+    <td class="expand"/>
+    <td class="status">Passed</td>
+    <td>Service: FormService :: #getForm :: should return the form matching the provided ID</td>
+  </tr>
+  <tr class="success">
+    <td class="expand"/>
+    <td class="status">Passed</td>
+    <td>Service: FormService :: #getForm :: should retrun `null` if it does NOT find a form matching the provided ID</td>
+  </tr>
+  <tr class="success">
+    <td class="expand"/>
+    <td class="status">Passed</td>
+    <td>Service: RestService :: should return the list of forms from the server on success</td>
+  </tr>
+  <tr class="success">
+    <td class="expand"/>
+    <td class="status">Passed</td>
+    <td>Service: RestService :: should log an error to the console on error</td>
   </tr>
 </table>
 

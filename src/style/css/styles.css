@@ -1,0 +1,405 @@
+/* Bootstrap overrides start */
+.nav > li > a:hover, .nav > li > a:focus, .nav > li > a:visited {
+    background-color: transparent;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: transparent;
+}
+/* Bootstrap overrides end */
+
+/* Application-Specific Styles */
+body{
+    background: #ffffff;
+}
+
+.win-body{
+    margin-top: 10em;
+}
+
+.win-extended-body{
+    margin-top: 11em;
+}
+
+/* Page layout */
+
+h1.win-page-header{
+    font-family: 'Gill Sans', sans-serif;
+    font-weight: 100;
+    text-transform: none;
+    font-size: 3.2em;
+}
+
+h1.win-home-page-header{
+    font-family: 'Gill Sans', sans-serif;
+    font-weight: 100;
+    text-transform: none;
+    font-size: 3.2em;
+    margin-top: 80px;
+}
+
+.win-page-header-div{
+    background: #f7f7f7;
+    border-bottom:2px solid #e7e7e7;
+    padding: 50px 50px 10px 50px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+/* end Page Layout */
+
+/* Form elements */
+.win-select{
+    display: flex;
+    background: #ffffff;
+    font-family: "Gill Sans", sans-serif;
+    text-align: left;
+    width: 100%;
+    padding: 12px 10px 10px 10px;
+    min-height: 42px;
+    max-height: 42px;
+    min-width: 178px;
+    border: none;
+    outline: 1px solid #739849;
+}
+
+.win-select-icon{
+    font-size: 1.2em;
+    float: left;
+    margin-top: 1px;
+}
+
+.win-select-angle{
+    position: absolute;
+    right: 12px;
+    font-size: 1.5em;
+    transform: rotate(0deg);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.win-select-angle-open{
+    transform: rotate(-180deg);
+}
+
+.win-select-placeholder-text{
+    text-transform: uppercase;
+    font-family: "Gill Sans", sans-serif;
+    /*color: #0072cf;*/
+    font-size: 1.0em;
+    font-weight: 300;
+    margin-left: 5px;
+}
+
+.win-select-selected-text{
+    font-family: "Gill Sans", sans-serif;
+    color: #575659;
+    font-size: 1.0em;
+    font-weight: 300;
+    margin-left: 5px;
+    margin-right: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.win-select-options-panel{
+    position: absolute;
+    background: #ffffff;
+    font-family: "Gill Sans", sans-serif;
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+    z-index: 5;
+    margin-top: 1px;
+    overflow: hidden;
+    max-height:500px;
+    outline: 1px solid #739849;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.win-select-options-panel-closed{
+    max-height:0 !important;
+    padding:0;
+    outline:none;
+    /*margin-top: -1px;*/
+}
+
+.win-select-options-list{
+    list-style: none;
+    padding-left:5px;
+    margin:0;
+}
+
+.win-select-options{
+    font-size: 1.2em;
+    padding: 2px 0;
+ }
+
+.win-select-options:hover{
+    background: #eff3f7;
+    margin: 0 -12px;
+    padding: 2px 12px;
+}
+
+.win-select-options-search{
+    width:100%;
+    outline: none !important;
+    border: 1px solid #739849;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    padding: 0 8px 0 25px;
+}
+.win-select-options-search-icon{
+    position: absolute;
+    font-size: 14px;
+    color: #739849;
+    margin-top: 3px;
+    margin-left: 8px;
+}
+
+.left-icon{
+    float: left;
+    padding-top: 5px;
+}
+
+.right-icon{
+    float: right;
+    padding-top: 5px;
+}
+
+/*end form elements */
+
+/* Helper styles */
+.force-display{
+    display:block !important;
+}
+
+.force-hide{
+    display:none !important;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.inline{
+    display: inline;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.hover-hand{
+    cursor: pointer;
+}
+
+.float-right{
+    float: right;
+    clear: right;
+}
+
+.float-left{
+    float: left;
+    clear: left;
+}
+
+.win-main-spinner{
+    width:100%;
+    text-align:center;
+    padding-top:50px;
+    color: #739849;
+}
+
+.img-verticle-align{
+    vertical-align: middle;
+}
+
+.img-verticle-align-top{
+    vertical-align: top;
+}
+
+.win-table-responsive tr td{
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.bootstrap-datetimepicker-widget table td.active, .bootstrap-datetimepicker-widget table td.active:hover{
+    background:#0072cf;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #739849;
+    border-color: #739849;
+    font-weight: 300;
+    font-size: 1.2em;
+    height: 30px;
+    padding: 2px 15px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+
+.win-red{
+    color: RED;
+}
+
+.win-light-gray{
+    color: #a1a1a1;
+}
+
+.win-highlight-row{
+    background: #eeeeee;
+}
+/* end Helper styles */
+/* toggle switch */
+.robs-toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 46px;
+    height: 19px;
+    margin: 0;
+}
+.robs-toggle-switch input {display:none;}
+.toggle-ball {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    border-radius: 34px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    border:2px solid #ccc;
+}
+.toggle-ball:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 1px;
+    background-color: #ccc;
+    border-radius: 50%;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+input[type="checkbox"]:focus, input[type="radio"]:focus{
+    outline: none;
+}
+input:checked + .toggle-ball {
+    background-color: #0072cf;
+    border:2px solid #0072cf;
+}
+input:checked + .toggle-ball:before {
+    background-color: #fff;
+}
+input:focus + .toggle-ball {
+    box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .toggle-ball:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+/* end toggle switch */
+
+/* Screen Sizes */
+/* MOBILE */
+@media (max-width: 576px) { /* xs */
+
+}
+
+@media (min-width: 577px) { /* sm and up */
+
+}
+
+@media (max-width: 767px) { /* mobile cutoff */
+    .desktop-only{
+        display: none !important;
+    }
+    .win-page-header-div {
+        background: #eee;
+        margin-left:-15px;
+        margin-right:-15px;
+        border-bottom: none;
+    }
+    h1.win-page-header{
+        text-align: center;
+        font-size: 2.3em;
+        margin-top: 10px;
+        margin-bottom: -10px;
+    }
+    .win-select-options-panel {
+        position: relative;
+        box-shadow: none;
+    }
+    .win-select-options {
+        font-size: 1.0em;
+        font-weight: 300;
+        padding: 10px 35px !important;
+        margin-left: -15px;
+        margin-right: -10px;
+        border-bottom: 1px solid #739849;
+    }
+    .win-select-options:hover {
+        background: transparent;
+        margin-left: -15px;
+        margin-right: -10px;
+    }
+    .win-select-options-search{
+        margin-bottom: 20px;
+    }
+    .win-select-options:first-child {
+        margin-top: -10px;
+        border-top: 1px solid #739849;
+    }
+    .win-select-options:last-child {
+        margin-bottom: -10px;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 768px) { /* md and up */
+    body{
+        background: #f7f7f7;
+    }
+    .mobile-only{
+        display: none !important;
+    }
+    .win-page-header-div{
+        margin-top: 50px;
+        padding-left: 0;
+        border-bottom: none;
+    }
+    .win-select-options {
+        font-size: 1.0em;
+        padding: 4px 0;
+    }
+    .win-select-options:hover {
+        padding: 4px 12px;
+    }
+}
+
+@media (min-width: 992px) { /* lg and up */
+    .win-page-header-div{
+        margin-top:80px;
+        padding-left: 50px;
+    }
+}
+
+@media (min-width: 1200px) { /* xl and up */
+
+}

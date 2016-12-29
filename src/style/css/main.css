@@ -1,0 +1,391 @@
+/* Winsupply SASS Structure
+   Author: Kristin Johnson
+   Version 0.0.1
+ */
+/*BASE - base Styles, variables, mixins, etc.*/
+/* line 1, ../scss/base/_base.scss */
+body, p, div, section, table, button, nav, h1, h2, h3, h4, h5, h6, input, ol, ul, li {
+  font-family: "Gill Sans", sans-serif;
+}
+
+/* line 4, ../scss/base/_base.scss */
+body, p, ul, table {
+  font-size: 13px;
+  color: #575659;
+}
+
+/* line 8, ../scss/base/_base.scss */
+.margin-top {
+  margin-top: 2em;
+}
+
+/* line 11, ../scss/base/_base.scss */
+.margin-bottom-1 {
+  margin-bottom: 1em;
+}
+
+/* line 14, ../scss/base/_base.scss */
+.win-blue {
+  color: #0072cf;
+}
+
+/* line 17, ../scss/base/_base.scss */
+.win-blue-dark {
+  color: #045e9b;
+}
+
+/* line 20, ../scss/base/_base.scss */
+.win-gray {
+  color: #575659;
+}
+
+/* line 23, ../scss/base/_base.scss */
+.win-greene {
+  color: #739849 !important;
+}
+
+/* line 26, ../scss/base/_base.scss */
+.win-orange {
+  color: #e28f3e;
+}
+
+/* line 29, ../scss/base/_base.scss */
+.background-blue {
+  background-color: #0072cf;
+}
+
+/* line 32, ../scss/base/_base.scss */
+.background-blue-dark {
+  background-color: #045e9b;
+}
+
+/* line 35, ../scss/base/_base.scss */
+.background-gray {
+  background-color: #575659;
+}
+
+/* line 38, ../scss/base/_base.scss */
+.background-greene {
+  background-color: #739849;
+}
+
+/* line 41, ../scss/base/_base.scss */
+.background-orange {
+  background-color: #e28f3e;
+}
+
+/* line 44, ../scss/base/_base.scss */
+ul.no-bullet {
+  list-style: none;
+}
+
+/* line 47, ../scss/base/_base.scss */
+a, button {
+  cursor: hand;
+}
+
+/* line 50, ../scss/base/_base.scss */
+a {
+  color: #0072cf;
+}
+
+/* line 53, ../scss/base/_base.scss */
+a:hover {
+  color: #00569c;
+}
+
+/* line 56, ../scss/base/_base.scss */
+a:dance {
+  color: #00569c;
+}
+
+/*LAYOUTS - header, footer, navigation etc.*/
+/* line 2, ../scss/layouts/_header.scss */
+.win-nav.navbar-inverse {
+  background: #0072cf;
+  border: #575659;
+}
+/* line 6, ../scss/layouts/_header.scss */
+.win-nav.navbar-inverse .navbar-nav > li > a {
+  color: white;
+  cursor: hand;
+}
+/* line 10, ../scss/layouts/_header.scss */
+.win-nav.navbar-inverse .navbar-nav > .active > a {
+  background: #045e9b;
+}
+/* line 13, ../scss/layouts/_header.scss */
+.win-nav.navbar-inverse .navbar-toggle {
+  border-color: #a7bac9;
+}
+/* line 16, ../scss/layouts/_header.scss */
+.win-nav.navbar-inverse .navbar-toggle:hover {
+  background: #045e9b;
+}
+/* line 19, ../scss/layouts/_header.scss */
+.win-nav.navbar-inverse .navbar-toggle:focus {
+  background-color: #045e9b;
+}
+/* line 22, ../scss/layouts/_header.scss */
+.win-nav.navbar-inverse .navbar-collapse {
+  border-color: #575659;
+}
+
+/* line 26, ../scss/layouts/_header.scss */
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: #045e9b;
+}
+
+/* line 30, ../scss/layouts/_header.scss */
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  background-color: transparent;
+  color: #e28f3e;
+}
+
+@media (max-width: 767px) {
+  /* line 36, ../scss/layouts/_header.scss */
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: white;
+  }
+
+  /* line 39, ../scss/layouts/_header.scss */
+  .navbar-nav .open .dropdown-menu > li > a {
+    line-height: 35px;
+  }
+}
+/* line 1, ../scss/layouts/_sections.scss */
+.section-white {
+  background-color: white;
+}
+
+/* line 4, ../scss/layouts/_sections.scss */
+.section-off-white {
+  background-color: #f5f5f5;
+}
+
+/*MODULES - buttons, tabs, tables/grids etc.*/
+/* line 1, ../scss/modules/_buttons.scss */
+.btn-win-greene {
+  background: #739849;
+  color: white;
+}
+
+/* line 5, ../scss/modules/_buttons.scss */
+.btn-win-greene:hover {
+  color: #F5F5F5;
+}
+
+/* line 8, ../scss/modules/_buttons.scss */
+.btn-win-blue {
+  background: #0072cf;
+  color: white;
+}
+
+/* line 12, ../scss/modules/_buttons.scss */
+.btn-win-blue:hover {
+  color: #F5F5F5;
+}
+
+/* line 1, ../scss/modules/_forms.scss */
+.win-form label {
+  color: #575659;
+}
+
+/* line 2, ../scss/modules/_panels.scss */
+.win-collapsable-header {
+  font-size: 1em;
+  color: #e28f3e;
+  border-bottom: 1px solid #575659;
+  text-transform: uppercase;
+  margin-bottom: .8em;
+}
+/* line 9, ../scss/modules/_panels.scss */
+.win-collapsable-header i {
+  float: right;
+}
+
+/* line 14, ../scss/modules/_panels.scss */
+.win-collapse-panel .panel-default > .panel-heading {
+  padding: 0;
+}
+
+/* line 17, ../scss/modules/_panels.scss */
+.win-collapse-panel .panel-heading a {
+  padding: 0px 0px 7px 0px;
+  display: inline-block;
+  width: 100%;
+  background-color: transparent;
+  color: #e28f3e;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
+/* line 29, ../scss/modules/_panels.scss */
+.panel-heading a:after {
+  font-family: "FontAwesome";
+  content: "\f147";
+  position: absolute;
+  right: 0px;
+  font-size: 20px;
+  font-weight: 400;
+  top: 50%;
+  margin-top: -15px;
+}
+
+/* line 40, ../scss/modules/_panels.scss */
+.win-collapse-panel .panel-heading a.collapsed:after {
+  content: "\f196";
+}
+
+/* line 44, ../scss/modules/_panels.scss */
+.win-collapse-panel .panel-default {
+  border: none;
+}
+
+/* line 48, ../scss/modules/_panels.scss */
+.win-collapse-panel .panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top: 1px solid #575659;
+}
+
+/* line 52, ../scss/modules/_panels.scss */
+.win-collapse-panel .panel {
+  background: transparent;
+}
+
+/* line 55, ../scss/modules/_panels.scss */
+.win-collapse-panel .panel-default > .panel-heading {
+  background-color: transparent;
+}
+
+/* line 3, ../scss/modules/_tables.scss */
+.win-table th {
+  color: #0072cf;
+  font-size: 14pt;
+  font-weight: 400;
+}
+/* line 8, ../scss/modules/_tables.scss */
+.win-table a {
+  color: #e28f3e;
+}
+/* line 11, ../scss/modules/_tables.scss */
+.win-table a:hover {
+  text-decoration: underline;
+  color: #e28f3e;
+}
+/* line 15, ../scss/modules/_tables.scss */
+.win-table tr:first-child {
+  border-top: 1px #575659 solid;
+  border-bottom: 1px #575659 solid;
+}
+
+/* line 21, ../scss/modules/_tables.scss */
+.win-responsive-table {
+  /* Smartphones (portrait and landscape) ----------- */
+  /* iPads (portrait and landscape) ----------- */
+}
+/* line 22, ../scss/modules/_tables.scss */
+.win-responsive-table a {
+  color: #e28f3e;
+}
+/* line 25, ../scss/modules/_tables.scss */
+.win-responsive-table a:hover {
+  text-decoration: underline;
+  color: #e28f3e;
+}
+/* line 30, ../scss/modules/_tables.scss */
+.win-responsive-table tr:nth-of-type(odd) {
+  background: #eee;
+}
+/* line 33, ../scss/modules/_tables.scss */
+.win-responsive-table td, .win-responsive-table th {
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+/* line 38, ../scss/modules/_tables.scss */
+.win-responsive-table th {
+  color: #0072cf;
+  font-size: 14pt;
+  font-weight: 400;
+  background: white;
+}
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 21, ../scss/modules/_tables.scss */
+  .win-responsive-table {
+    /* Force table to not be like tables anymore */
+    /* Hide table headers (but not display: none;, for accessibility) */
+  }
+  /* line 50, ../scss/modules/_tables.scss */
+  .win-responsive-table table, .win-responsive-table thead, .win-responsive-table tbody, .win-responsive-table th, .win-responsive-table td, .win-responsive-table tr {
+    display: block;
+  }
+  /* line 55, ../scss/modules/_tables.scss */
+  .win-responsive-table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  /* line 61, ../scss/modules/_tables.scss */
+  .win-responsive-table tr {
+    border: 1px solid #ccc;
+  }
+  /* line 63, ../scss/modules/_tables.scss */
+  .win-responsive-table td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+  /* line 71, ../scss/modules/_tables.scss */
+  .win-responsive-table td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* line 87, ../scss/modules/_tables.scss */
+  .win-responsive-table body {
+    padding: 0;
+    margin: 0;
+    width: 320px;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 95, ../scss/modules/_tables.scss */
+  .win-responsive-table body {
+    width: 495px;
+  }
+}
+
+/* line 1, ../scss/modules/_typography.scss */
+h1 {
+  font-family: 'Gill Sans', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 48px;
+}
+
+/* line 7, ../scss/modules/_typography.scss */
+h2 {
+  font-family: 'Gill Sans', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+/* line 13, ../scss/modules/_typography.scss */
+h3 {
+  font-family: 'Gill Sans', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 13px;
+}

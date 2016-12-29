@@ -1,18 +1,28 @@
 import {Component} from '@angular/core';
 
-import {Question} from './models/question.model';
+import {FormData, Question} from './models';
+
+import {FormService} from './services/form.service';
+import {RestService} from './services/rest.service';
 
 @Component({
     selector: 'my-app',
-    templateUrl: './app.component.html',
-    styles: []
+    templateUrl: './app.component.html'
 })
+export class AppComponent {
+    forms: FormData[] = null;
+    selectedForm: FormData = null;
 
-export class AppComponent{
-    questions: Array<Question>;
+    constructor(private formService: FormService, restService: RestService) {
+        restService.getForms().subscribe((forms: FormData[]) => {
+            this.formService.setForms(forms);
+            this.forms = this.formService.getAllForms();
+            console.log(this.forms);
+        });
+    }
 
-    constructor() {
-        this.questions = [];
+    selectForm(formId: number) {
+        this.selectedForm = this.formService.getForm(formId);
     }
 
 }
